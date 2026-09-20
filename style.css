@@ -393,6 +393,33 @@ p {
   gap: 18px;
 }
 
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.process-card {
+  padding: 28px 22px;
+  border-radius: 24px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 12px 28px rgba(65, 41, 26, 0.04);
+}
+
+.process-card span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  border-radius: 12px;
+  background: rgba(139, 94, 60, 0.12);
+  color: var(--primary-dark);
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
 .gallery-card {
   position: relative;
   min-height: 240px;
@@ -536,6 +563,74 @@ p {
   color: var(--primary-dark);
 }
 
+.contact-wrap {
+  padding-top: 40px;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 32px;
+  align-items: start;
+}
+
+.contact-copy {
+  padding-right: 18px;
+}
+
+.mini-list {
+  list-style: none;
+  padding: 0;
+  margin: 24px 0 0;
+  display: grid;
+  gap: 12px;
+  color: var(--text);
+  font-weight: 500;
+}
+
+.mini-list li::before {
+  content: "•";
+  color: var(--primary);
+  font-weight: 700;
+  margin-right: 10px;
+}
+
+.contact-form {
+  background: rgba(255, 255, 255, 0.42);
+  border: 1px solid var(--line);
+  border-radius: 26px;
+  padding: 26px 22px;
+  box-shadow: var(--shadow);
+}
+
+.field-row {
+  margin-bottom: 18px;
+}
+
+.field-row label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.field-row input,
+.field-row select,
+.field-row textarea {
+  width: 100%;
+  border: 1px solid rgba(86, 57, 43, 0.18);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 14px 16px;
+  color: var(--text);
+  font: inherit;
+}
+
+.field-row textarea {
+  resize: vertical;
+}
+
 .site-footer {
   padding: 32px 0 24px;
   background: #1d1715;
@@ -602,7 +697,9 @@ p {
   .service-grid,
   .project-grid,
   .gallery-grid,
-  .promise-grid {
+  .promise-grid,
+  .process-grid,
+  .contact-grid {
     grid-template-columns: 1fr;
   }
 
