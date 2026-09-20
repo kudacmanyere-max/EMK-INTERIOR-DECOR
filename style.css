@@ -93,6 +93,22 @@ p {
   color: var(--muted);
 }
 
+.whatsapp-float {
+  position: fixed;
+  right: 22px;
+  bottom: 22px;
+  z-index: 30;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 20px;
+  border-radius: 999px;
+  background: #25d366;
+  color: #ffffff;
+  font-weight: 700;
+  box-shadow: 0 14px 30px rgba(37, 211, 102, 0.35);
+}
+
 .site-header {
   position: sticky;
   top: 0;
