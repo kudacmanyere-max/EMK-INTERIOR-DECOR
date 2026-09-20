@@ -345,6 +345,48 @@ p {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.promise-grid {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.promise-copy {
+  padding-right: 20px;
+}
+
+.promise-points {
+  display: grid;
+  gap: 20px;
+}
+
+.point {
+  display: flex;
+  gap: 18px;
+  padding: 22px 24px;
+  border-radius: 20px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.42);
+}
+
+.point strong {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  background: rgba(139, 94, 60, 0.12);
+  color: var(--primary-dark);
+  font-size: 1.1rem;
+}
+
+.point h3 {
+  margin: 0 0 8px;
+  font-size: 1.8rem;
+}
+
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -559,7 +601,8 @@ p {
   .footer-grid,
   .service-grid,
   .project-grid,
-  .gallery-grid {
+  .gallery-grid,
+  .promise-grid {
     grid-template-columns: 1fr;
   }
 
